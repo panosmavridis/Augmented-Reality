@@ -24,11 +24,14 @@
             
             <a-assets>
             <img id="my-image" src="assets/dpsd19072.png">
+            <a-asset-item id="HydrogenAtom" src="assets/HydrogenAtom.gltf"></a-asset-item>
+            <a-asset-item id="OxygenAtom" src="assets/OxygenAtom.gltf"></a-asset-item>
+            <a-asset-item id="WaterMolecule" src="assets/WaterMolecule.gltf"></a-asset-item>
         </a-assets>
             
         <a-marker preset="hiro">           
             
-                <a-entity id="box"
+          /*      <a-entity id="box"
                 
                           geometry="primitive: box; width: 0.7; depth: 0.7; height: 0.7;"
                           rotation="0 45 0"
@@ -50,7 +53,7 @@
                             height="2.5"
                             color="#32a842">
                 </a-cylinder>
-
+*\
         
         
                 <a-entity id="annyang" annyang-speech-recognition></a-entity>
@@ -70,9 +73,24 @@
             <a-obj-model src="#text-obj" mtl="#text-mtl"></a-obj-model>
 
             <a-image src="#my-image" width="1" height="1" rotation="90 180 0" position="0 0 0"></a-image>
-
-
+     
         </a-marker>
+    
+    <a-marker type='pattern' id="HydrogenMarker" url='assets/pattern-card-H.patt'>
+
+            <a-entity gltf-model="#HydrogenAtom"
+                animation__rotate="property: rotation; dur: 5000; easing: linear; dir: normal; from:180 0 0; to: 180 360 0; loop: true;">
+            </a-entity>
+            
+        </a-marker>
+
+        <a-marker type='pattern' id="OxygenMarker" url='assets/pattern-card-O.patt'>
+
+            <a-entity gltf-model="#OxygenAtom"
+                animation__rotate="property: rotation; dur: 5000; easing: linear; dir: normal; from:180 0 0; to: 180 360 0; loop: true;">
+            </a-entity>
+
+        </a-marker>    
     
         <a-entity camera></a-entity>
         </a-scene>
