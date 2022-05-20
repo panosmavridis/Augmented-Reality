@@ -23,7 +23,13 @@ Technically, it's not that hard for a task and I'll explain why...
 <h3>To conclude, I really enjoyed the proccess and I am really interested on searching deeper into the Augmented-Reality and coding. It's really easy if you follow a few steps and be positive through the whole proccess!</h3>
     
 # 2nd Deliverable
+Well, the 2nd deliverable was way more trickier than I imagine. I put on many hours on searching how I will even start the project... The deliverable was separated on three tasks.
 
+First of all, I had to create a custom marker that contained my dpsd number and furthermore the H and O atoms, which I did. I went to <a href="[https://www.npmjs.com/package/aframe-speech-command-component](https://ar-js-org.github.io/AR.js/three.js/examples/marker-training/examples/generator.html)"> AR.js Marker Training</a> and I did all the proccess required to make the markers.
+
+For the 2nd task, we had to make 3D animations of the Hydrogen and Oxygen atoms, that were read by the custom markers that I had made earlier. I used the blender 3D program to make the 3d object and at the same time, I animated it. Afterwards, I saved the animation as an mp4 and I uploaded both the .gltf and .mp4 in my assets.
+
+The final task was displayind a 3D animation of a water molecule as soon as 3 markers get in close proximity. It worked a couple of times, but after a while I stopped getting a display of the water... I really am not sure why it's not working and saddly, I don't have the time to restore any possible mistake. 
 
 # 3rd Deliverable 
 
